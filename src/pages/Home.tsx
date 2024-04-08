@@ -76,7 +76,7 @@ export default function Home() {
       <section className="p-8 border rounded-lg shadow-md bg-white">
         <div className="mb-12">
           <button
-            className="btn btn-outline btn-secondary btn-wide"
+            className="btn btn-outline btn-wide"
             onClick={toggleTranslateState}
           >
             {_.capitalize(translateState.input)} to{" "}
@@ -114,7 +114,7 @@ export default function Home() {
         </div>
         <div className="mt-6">
           <button
-            className="btn btn-primary btn-wide text-lg"
+            className="btn btn-primary text-lg"
             onClick={() => {
               getData(translateState.input, translateValue.input);
             }}
