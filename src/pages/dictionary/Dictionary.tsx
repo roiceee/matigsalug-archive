@@ -7,7 +7,7 @@ import {
   orderBy,
   query,
 } from "firebase/firestore";
-import { Search, Trash2 } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import { useContext, useEffect, useMemo, useState } from "react";
 import { UserContext } from "../../components/UserProvider";
 import { db } from "../../firebase";
@@ -159,9 +159,6 @@ export default function Dictionary() {
                 placeholder="Search"
                 onChange={(e) => setSearched(e.target.value)}
               />
-              <button>
-                <Search />
-              </button>
             </label>
           </div>
           <div className="flex flex-row gap-2">
