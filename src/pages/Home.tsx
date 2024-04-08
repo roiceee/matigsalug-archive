@@ -73,8 +73,8 @@ export default function Home() {
 
   return (
     <main>
-      <section className="mb-10">
-        <div>
+      <section className="p-8 border rounded-lg shadow-md bg-white">
+        <div className="mb-12">
           <button
             className="btn btn-outline btn-secondary btn-wide"
             onClick={toggleTranslateState}
@@ -84,8 +84,6 @@ export default function Home() {
             <ArrowUpDown />
           </button>
         </div>
-      </section>
-      <section className="p-8 border rounded-lg shadow-md bg-white">
         <div className="flex flex-col lg:flex-row w-full justify-center gap-3">
           <div className="flex flex-col w-full">
             <label htmlFor="input" className="mb-2">

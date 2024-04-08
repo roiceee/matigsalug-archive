@@ -1,5 +1,6 @@
-import { Book, Home, Languages } from "lucide-react";
+import { Book, Home } from "lucide-react";
 import { Link } from "react-router-dom";
+import UserDropdown from "./UserDropdown";
 
 export default function Navbar() {
   function isActive(string: string) {
@@ -7,18 +8,18 @@ export default function Navbar() {
   }
 
   return (
-    <div className="navbar bg-base-100 border-b">
+    <div className="navbar border-b bg-white">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="flex-1">
           <Link to={"/"} className="flex gap-2 text-xl">
-            <span className="font-bold">Matigsalug</span> <Languages />
+            <span className="font-bold">Matigsalug Archive</span>
           </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link to={"/"} className={`btn btn-ghost ${isActive("/")}`}>
-                <Home height={30} width={30}/>
+                <Home height={30} width={30} />
               </Link>
             </li>
             <li>
@@ -26,8 +27,11 @@ export default function Navbar() {
                 to={"/dictionary"}
                 className={`btn btn-ghost ${isActive("/dictionary")}`}
               >
-                <Book height={30} width={30}/>
+                <Book height={30} width={30} />
               </Link>
+            </li>
+            <li>
+              <UserDropdown />
             </li>
           </ul>
         </div>
