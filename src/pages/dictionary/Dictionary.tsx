@@ -115,15 +115,15 @@ export default function Dictionary() {
             key={"data-" + index}
             className="card bg-white shadow-md max-w-[600px] w-full mx-auto"
           >
-            <div className="card-body md:flex-row p-4">
+            <div className="card-body md:flex-row p-3 md:p-4">
               <div>
                 <div className="text-xs mb-2">English</div>
-                <div className="text-xl">{entry.english}</div>
+                <div className="text-md md:text-xl">{entry.english}</div>
               </div>
-              <div className="divider md:divider-horizontal my-1"></div>
+              <div className="divider md:divider-horizontal my-0 lg:my-1"></div>
               <div>
                 <div className="text-xs mb-2">Matigsalug</div>
-                <div className="text-xl">{entry.matigsalug}</div>
+                <div className="text-md md:text-xl">{entry.matigsalug}</div>
               </div>
               <div className=" ml-auto">
                 {user && (
