@@ -76,7 +76,7 @@ export default function Home() {
       <section className="p-8 border rounded-lg shadow-md bg-white">
         <div className="mb-12">
           <button
-            className="btn btn-outline btn-wide"
+            className="btn btn-outline"
             onClick={toggleTranslateState}
           >
             {_.capitalize(translateState.input)} to{" "}
@@ -92,7 +92,7 @@ export default function Home() {
             <textarea
               id="input"
               placeholder="Input word here"
-              className="textarea textarea-lg textarea-bordered w-full"
+              className="textarea textarea-lg textarea-bordered w-full bg-white"
               style={{ resize: "none" }}
               value={translateValue.input}
               onChange={(e) => setInputValue(e.target.value)}
@@ -106,7 +106,7 @@ export default function Home() {
               readOnly
               id="result"
               placeholder="Result"
-              className="textarea textarea-lg textarea-primary textarea-bordered w-full bg-base-content text-slate-100"
+              className="textarea textarea-lg textarea-bordered w-full text-slate-100"
               style={{ resize: "none" }}
               value={translateValue.output}
             ></textarea>
