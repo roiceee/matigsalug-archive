@@ -8,7 +8,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="navbar border-b bg-white">
+    <div className="navbar border-b bg-white sticky top-0">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="flex-1">
           <Link to={"/"} className="flex gap-3 text-xl items-center">
