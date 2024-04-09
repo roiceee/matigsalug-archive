@@ -3,6 +3,7 @@ import _ from "lodash";
 import { ArrowUpDown } from "lucide-react";
 import { collection, getDocs, limit, query, where } from "firebase/firestore";
 import { db } from "../firebase";
+import { About } from "../components/About";
 
 export default function Home() {
   const [translateState, setTranslateState] = useState<{
@@ -106,7 +107,7 @@ export default function Home() {
               readOnly
               id="result"
               placeholder="Result"
-              className="textarea textarea-lg textarea-bordered w-full text-slate-100"
+              className="textarea textarea-lg textarea-bordered w-full text-slate-black"
               style={{ resize: "none" }}
               value={translateValue.output}
             ></textarea>
@@ -122,6 +123,10 @@ export default function Home() {
             Resend
           </button>
         </div>
+      </section>
+      
+      <section>
+        <About></About>
       </section>
     </main>
   );
