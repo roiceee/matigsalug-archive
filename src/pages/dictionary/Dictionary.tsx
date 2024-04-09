@@ -12,6 +12,7 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import { UserContext } from "../../components/UserProvider";
 import { db } from "../../firebase";
 
+
 export default function Dictionary() {
   //get all data from firestore db
 
