@@ -1,5 +1,5 @@
 import { getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { LucideLockKeyholeOpen, User } from "lucide-react";
+import { LucideLockKeyholeOpen, SquareUserRound } from "lucide-react";
 import { useContext } from "react";
 import { UserContext } from "./UserProvider";
 
@@ -7,11 +7,11 @@ export default function UserDropdown() {
   const { user } = useContext(UserContext);
   const auth = getAuth();
 
-  return (
+  return (  
     <div className="p-0">
       <div className="dropdown dropdown-end">
         <div tabIndex={0} role="button" className="btn btn-ghost">
-          {auth.currentUser ? <LucideLockKeyholeOpen /> : <User />}
+          {auth.currentUser ? <LucideLockKeyholeOpen /> : <SquareUserRound height={35} width={35} />}
         </div>
         <ul
           tabIndex={0}
