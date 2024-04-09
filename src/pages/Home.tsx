@@ -5,6 +5,7 @@ import { collection, getDocs, limit, query, where } from "firebase/firestore";
 import { db } from "../firebase";
 import { About } from "../components/About";
 
+
 export default function Home() {
   const [translateState, setTranslateState] = useState<{
     input: "english" | "matigsalug";
@@ -124,7 +125,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      
+
       <section>
         <About></About>
       </section>

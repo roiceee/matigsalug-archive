@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Navbar from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 interface Props {
   children: ReactNode;
@@ -12,7 +13,9 @@ export default function Layout({ children }: Props) {
       <section className="mt-6 max-w-screen-xl mx-auto px-2">
         {children}
       </section>
-      <footer></footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </section>
   );
 }
