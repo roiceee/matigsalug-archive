@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section>
         <img src={logo} alt="" />
-        Hello World!
+        Hello World
     </section>
   )
 }
