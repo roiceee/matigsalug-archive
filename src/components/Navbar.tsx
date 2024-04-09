@@ -11,7 +11,8 @@ export default function Navbar() {
     <div className="navbar border-b bg-white">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="flex-1">
-          <Link to={"/"} className="flex gap-2 text-xl">
+          <Link to={"/"} className="flex gap-3 text-xl items-center">
+            <img src="src\assets\img\logo.png" alt="" />
             <span className="font-bold">Matigsalug Archive</span>
           </Link>
         </div>
