@@ -12,7 +12,6 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import { UserContext } from "../../components/UserProvider";
 import { db } from "../../firebase";
 
-
 export default function Dictionary() {
   //get all data from firestore db
 
@@ -218,7 +217,9 @@ export default function Dictionary() {
               </label>
             </div>
             <div>
-              <button className="btn btn-primary btn-wide" onClick={addData}>Add</button>
+              <button className="btn btn-primary btn-wide" onClick={addData}>
+                Add
+              </button>
             </div>
           </div>
         </section>

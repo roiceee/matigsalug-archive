@@ -13,9 +13,7 @@ export default function Layout({ children }: Props) {
       <section className="mt-6 max-w-screen-xl mx-auto px-2">
         {children}
       </section>
-      <footer>
-        <Footer></Footer>
-      </footer>
+      <Footer />
     </section>
   );
 }

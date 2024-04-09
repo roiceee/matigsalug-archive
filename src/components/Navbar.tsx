@@ -8,12 +8,12 @@ export default function Navbar() {
   }
 
   return (
-    <div className="navbar border-b bg-white sticky top-0">
+    <div className="navbar border-b bg-white sticky top-0 z-50">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="flex-1">
           <Link to={"/"} className="flex gap-3 text-xl items-center">
             <img src="src\assets\img\logo.png" alt="" />
-            <span className="font-bold">Matigsalug Archive</span>
+            <span className="font-bold hidden sm:inline">Matigsalug Archive</span>
           </Link>
         </div>
         <div className="flex-none">
