@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="flex-1">
           <Link to={"/"} className="flex gap-3 text-xl items-center">
-            <img src="src\assets\img\logo.png" alt="" />
+            <img src="/titleLogo.png" alt="" />
             <span className="font-bold hidden sm:inline">Matigsalug Archive</span>
           </Link>
         </div>
