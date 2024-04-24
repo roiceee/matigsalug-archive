@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex-1">
           <Link to={"/"} className="flex gap-3 text-xl items-center">
             <img src="/titleLogo.png" alt="" />
-            <span className="font-bold hidden sm:inline">Matigsalug Archive</span>
+            <span className="font-bold hidden sm:inline">Matigsalug Word Bank</span>
           </Link>
         </div>
         <div className="flex-none">
